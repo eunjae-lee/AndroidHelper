@@ -2,6 +2,7 @@ package net.eunjae.plugins.androidhelper.dialog;
 
 import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.LocalFileSystem;
 import com.intellij.openapi.vfs.VirtualFile;
 
@@ -106,14 +107,14 @@ public class CreateDrawableSelectorDialog extends JDialog {
     }
 
     private void onOK() {
+        dispose();
         String content = buildContent();
         File file = exportToFile(content);
         openOnEditor(file);
-        dispose();
     }
 
     private void openOnEditor(File file) {
-        VirtualFile virtualFile = LocalFileSystem.getInstance().findFileByIoFile(file);
+        VirtualFile virtualFile = LocalFileSystem.getInstance().refreshAndFindFileByIoFile(file);
         FileEditorManager.getInstance(project).openFile(virtualFile, true);
     }
 

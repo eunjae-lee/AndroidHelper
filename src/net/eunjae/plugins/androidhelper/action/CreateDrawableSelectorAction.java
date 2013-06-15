@@ -15,8 +15,9 @@ public class CreateDrawableSelectorAction extends AnAction {
         Project project = DataKeys.PROJECT.getData(e.getDataContext());
 
         CreateDrawableSelectorDialog dialog = new CreateDrawableSelectorDialog(project);
+        dialog.setSize(350, 220);
+        dialog.setLocationRelativeTo(null);
         dialog.setTitle("Input your drawable selector name:");
-        dialog.setMinimumSize(new Dimension(350, 220));
         dialog.setVisible(true);
     }
 }

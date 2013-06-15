@@ -2,14 +2,14 @@
     <id>net.eunjae.plugins.androidhelper</id>
     <name>Android Helper</name>
     <version>0.1</version>
-    <vendor email="karis612@gmail.com" url="https://github.com/eunjae-lee">Eunjae Lees</vendor>
+    <vendor email="karis612@gmail.com" url="https://github.com/eunjae-lee">Eunjae Lee</vendor>
 
     <description><![CDATA[
       Android Helper tries to get you free from routine works on Android development. More features coming soon. If any suggestions, please contact to karis612@gmail.com.
       ]]></description>
 
     <change-notes><![CDATA[
-      <h1>0.1</h1>
+      <h4>0.1</h4>
       <ul>
         <li>Feature : Creating a drawable selector xml</li>
       </ul>
