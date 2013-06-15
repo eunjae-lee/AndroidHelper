@@ -1,17 +1,18 @@
 <idea-plugin version="2">
     <id>net.eunjae.plugins.androidhelper</id>
     <name>Android Helper</name>
-    <version>1.0</version>
+    <version>0.1</version>
     <vendor email="karis612@gmail.com" url="https://github.com/eunjae-lee">Eunjae Lees</vendor>
 
     <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <small>most HTML tags may be used</small>
+      Android Helper tries to get you free from routine works on Android development. More features coming soon. If any suggestions, please contact to karis612@gmail.com.
       ]]></description>
 
     <change-notes><![CDATA[
-      Add change notes here.<br>
-      <small>most HTML tags may be used</small>
+      <h1>0.1</h1>
+      <ul>
+        <li>Feature : Creating a drawable selector xml</li>
+      </ul>
       ]]>
     </change-notes>
 
