@@ -1,0 +1,49 @@
+<idea-plugin version="2">
+    <id>net.eunjae.plugins.androidhelper</id>
+    <name>Android Helper</name>
+    <version>1.0</version>
+    <vendor email="karis612@gmail.com" url="https://github.com/eunjae-lee">Eunjae Lees</vendor>
+
+    <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <small>most HTML tags may be used</small>
+      ]]></description>
+
+    <change-notes><![CDATA[
+      Add change notes here.<br>
+      <small>most HTML tags may be used</small>
+      ]]>
+    </change-notes>
+
+    <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="107.105"/>
+
+    <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <group id="net.eunjae.plugins.androidhelper" text="Android Helper" description="">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="AndroidHelper.CreateDrawableSelectorAction"
+                    class="net.eunjae.plugins.androidhelper.action.CreateDrawableSelectorAction"
+                    text="Create a drawable selector XML..." description="Create a drawable selector XML">
+                <add-to-group group-id="MainMenu" anchor="after" relative-to-action="WindowMenu"/>
+            </action>
+        </group>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+</idea-plugin>
