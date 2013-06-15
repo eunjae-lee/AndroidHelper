@@ -1,18 +1,15 @@
-package net.eunjae.plugins.androidhelper.panel;
+package net.eunjae.plugins.androidhelper.dialog;
 
 import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.project.ex.ProjectManagerEx;
 import com.intellij.openapi.vfs.LocalFileSystem;
 import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.openapi.vfs.VirtualFileManager;
-import com.intellij.psi.PsiFile;
 
 import javax.swing.*;
 import java.awt.event.*;
 import java.io.*;
 
-public class InputDialog extends JDialog {
+public class CreateDrawableSelectorDialog extends JDialog {
     private Project project;
     private JPanel contentPane;
     private JButton buttonOK;
@@ -27,7 +24,7 @@ public class InputDialog extends JDialog {
     private JTextField normalTextField;
     private String projectPath = null;
 
-    public InputDialog(Project project) {
+    public CreateDrawableSelectorDialog(Project project) {
         this.projectPath = project.getBasePath();
         this.project = project;
         setContentPane(contentPane);
@@ -154,14 +151,6 @@ public class InputDialog extends JDialog {
     }
 
     private void onCancel() {
-// add your code here if necessary
         dispose();
     }
-
-//    public static void main(String[] args) {
-//        InputDialog dialog = new InputDialog();
-//        dialog.pack();
-//        dialog.setVisible(true);
-//        System.exit(0);
-//    }
 }
